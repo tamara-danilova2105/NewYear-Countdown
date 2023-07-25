@@ -1,0 +1,283 @@
+body {
+    background-color: #FF616D;
+    margin: 0;
+}
+
+
+.heading, .headingTwo {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 60px;
+    background-color: rgba(251, 248, 249, 0.9);
+    padding: 20px;
+    border: 3px solid black;
+    font-family: 'Pacifico', cursive;
+}
+
+
+.weeksix {
+    background-image: url(santa.jpeg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 200px;
+    background-color: rgba(251, 248, 249, 0.9);
+    margin-top: 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.itemMovie {
+    text-shadow: 2px 1px #fff;
+    font-size: 30px;
+    margin: 0;
+}
+
+.red {
+    font-family: 'Pacifico', cursive;
+    color: red;
+    border: none;
+    text-shadow: 3px 2px black;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#myButton {
+    margin-left: 100px;
+    border: none;
+    z-index: 3;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    background-image: url(play-button.png);
+    background-size: contain;
+    border-radius: 50%;
+    outline: none;
+}
+
+.btn-pause {
+    width: 100px;
+    height: 100px;
+    background-image: url(pause.png);
+    background-size: contain;
+    border-radius: 50%;
+    outline: none;
+}
+
+.search {   
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    padding: 10px;
+    flex: 1;
+    z-index: 3;
+    outline: none;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 3px 2px #fff;
+}
+
+.movie {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.movieName {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    margin-top: 40px;
+    text-align: center;
+    z-index: 3;
+}
+
+.more {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 300vh;
+}
+
+
+
+
+
+@media all and (max-width: 800px) {
+    .weeksix {
+        height: 60vh;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .block {
+        font-size: 40px;
+        height: 200px;
+        width: 130px;
+    }
+
+    #myButton {
+        margin-left: 40px;
+}
+    .img {
+        width: 600px;
+        height: 400px;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    .weeksix {
+        height: 340px;
+        width: auto;   
+    }
+
+    h1 {
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    #myButton {
+        margin-left: 20px;
+    }
+
+    .btn {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .btn-pause {
+        width: 50px;
+        height: 50px;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .block {
+        font-size: 20px;
+        height: 90px;
+        width: 70px;
+        border-radius: 10px;
+        margin-top: 90px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .img {
+        width: 300px;
+        height: 200px;
+    }
+
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 500vh;
+    }
+
+}
+
+span {
+    display: none;
+}
+
+
+@media all and (max-width: 375px) {
+    
+    .weeksix {
+        width: 360px;   
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+
+}
+
+@media all and (max-width: 280px) {
+
+    .weeksix {
+        width: 260px;
+        height: 300px;   
+    }
+    
+    .nonemini {
+        display: none;
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    .block {
+        height: 100px;
+        width: 70px;
+    }
+
+    .img {
+        width: 270px;
+        height: 180px;
+    }
+
+    .block {
+        margin-top: 60px;
+    }
+
+
+}
