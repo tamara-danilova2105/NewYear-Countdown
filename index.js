@@ -1,6 +1,7 @@
 function ChristmasCoutdown() {
-    const christmasDate = new Date("January 1, 2024 00:00");
     const now = new Date();
+    const year = now.getFullYear();
+    const christmasDate = new Date(`January 1, ${year + 1} 00:00`);
     const diff = christmasDate - now;
 
     const msInSeconds = 1000;
